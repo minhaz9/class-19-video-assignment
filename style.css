@@ -1,0 +1,236 @@
+
+.men-ul{
+    background: red;
+    text-align: end;
+    
+}
+.gleb{
+    position: absolute;
+    left: 20px;
+     top: 0px;
+    text-transform: uppercase;
+    font-size: 64px;
+    bottom: -2px;
+    color: white;
+    font-weight: 900;
+}
+.men-ul li{
+    display: inline-block;
+    position: relative;
+    padding: 21px 29px;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-left: -4px;
+    transition: all 0.4s ease;
+    
+}
+.men-ul li:hover{
+    background: rgba(161, 22, 22, 0.856);
+}
+
+.men-ul li .before::before{
+    content: "\f0d7";
+    width: 100%;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    margin-right: 10px;
+    font-size: 20px;
+}
+.men-ul li a{
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+
+.men-ul li ul{
+    padding: 0px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: rgba(255, 0, 0, 0.582);
+    text-transform: capitalize !important;
+    text-align: left;
+    visibility: hidden;
+    opacity: 0;
+    transition: .5s;
+    transform: scaleY(0);
+    transform-origin: top;
+   
+}
+
+.men-ul li ul li{
+    display: block;
+    width: 200px;
+    padding: 6px 0px 6px 18px;
+    margin-left: 0px;
+    border-bottom: 1px solid rgb(8, 6, 6);
+} 
+.men-ul li:hover > ul{
+    visibility: visible;
+    opacity: 1;
+   
+    transform: scaleY(1);
+}
+ .men-ul li ul li:hover{
+    visibility: visible;
+    opacity: 1;
+} 
+.men-ul li ul li a{
+    padding-left: -40px;
+    display: inline-block;
+}
+.men-ul li ul li ul{
+    left: 100%;
+    top: 0;
+}
+.banner-write h1,p,.btun{
+    position: relative;
+    top: 100px;
+}
+.banner-write h1{
+    font-size: 55px;
+    width: 75%;
+    margin: auto;
+}
+.banner-write p{
+    width: 50%;
+    margin: 25px auto;
+}
+.btun .first,.secnd{
+    padding: 10px 20px;
+    border: none;
+    background: red;
+    transition: 0.5s;
+    border: 1px solid transparent; 
+    transform: rotate(0);  
+}
+.btun .secnd:hover{
+    background: transparent !important;
+    color: white;
+    border: 1px solid black;
+    transform: rotate(360deg);
+}
+
+.first:hover {
+    background: transparent;
+    color: white;
+    border: 1px solid black;
+    transform: rotate(360deg);
+}
+.banner{
+    background-image: url(./img/background-01.jpg);
+    
+    position: relative;
+    top: 73px;
+    left: auto;
+    color: white;
+    text-align: center;
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    z-index: 1;
+}
+
+.banner::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.342);
+    z-index: -1;
+
+}
+
+.service h4{
+    margin: 20px 0px;
+    position: relative;
+}
+.service h4::before {
+    content: "";
+    position: absolute;
+    height: 4px;
+    width: 61px;
+    left: 37%;
+    bottom: -18px;
+    background: #41b6ed;
+    border-radius: 45px;
+}
+.service .box1{
+    background: rgb(77, 72, 72);
+    color: rgb(236, 236, 236);
+    margin: 0 30px;
+    padding: 30px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.service .box2{
+    background: rgb(77, 72, 72);
+    color: rgb(236, 236, 236);
+    margin: 0 30px;
+    padding: 30px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.service .box3{
+    background: rgb(77, 72, 72);
+    color: rgb(236, 236, 236);
+    margin: 0 30px;
+    padding: 30px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.banner-write{
+    
+}
+.service{
+    position: relative;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    
+}
+
+.service .box1:hover{
+    background: rgb(207, 207, 207);
+    color: black;
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px blueviolet;
+    
+}
+.service .box2:hover{
+    background: rgb(207, 207, 207);
+    color: black;
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px blueviolet;
+}
+.service .box3:hover{
+    background: rgb(207, 207, 207);
+    color: black;
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px blueviolet;
+}
+
+
+.hh{
+    position: relative;
+    top: 40px;
+}
+.hh::before{
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 40%;
+    height: 4px;
+    width: 250px;
+    background: #000;
+}
+.iamges img{
+    margin: 20px 25px;
+    width: 250px;
+    transition: .4s;
+}
+.iamges img:hover{
+    transform: scale(1.2);
+}
